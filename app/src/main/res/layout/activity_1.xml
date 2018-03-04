@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context="com.example.joker.app01.activity.ActivityMain">
+
+    <Button
+        android:id="@+id/btn_go_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/activity_main_to_study_activity_text"
+        />
+
+    <Button
+        android:id="@+id/btn_go_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="使用隐式意图跳转"/>
+
+    <Button
+        android:id="@+id/btn_go_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="使用隐式意图打开浏览器" />
+
+    <Button
+        android:id="@+id/btn_go_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="使用隐式意图2"/>
+
+    <Button
+        android:id="@+id/btn_go_5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="使用隐式意图打电话"/>
+
+    <Button
+        android:id="@+id/btn_go_6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="传递数据给下一个Activity"
+        android:textAllCaps="false"/>
+
+    <Button
+        android:id="@+id/btn_go_7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="返回数据给上一个活动(startActivityForResult)"
+        android:textAllCaps="false"/>
+
+</LinearLayout>
