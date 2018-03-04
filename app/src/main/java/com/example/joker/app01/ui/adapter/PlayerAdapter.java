@@ -28,13 +28,28 @@ public class PlayerAdapter extends ArrayAdapter<Player> {
     @Override
     public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
         Player player = getItem(position);
-        View view = LayoutInflater.from(getContext()).inflate(resourceId, parent, false);
-        ImageView imageView = view.findViewById(R.id.iv_player);
-        TextView name = view.findViewById(R.id.tv_player_name);
-        TextView team = view.findViewById(R.id.tv_player_team);
-        imageView.setImageResource(player.getImageId());
-        name.setText(player.getName());
-        team.setText(player.getTeamName());
+        View view;
+        ViewHolder viewHolder;
+        if (convertView == null) {
+            view = LayoutInflater.from(getContext()).inflate(resourceId, parent, false);
+            viewHolder = new ViewHolder();
+            viewHolder.image = view.findViewById(R.id.iv_player);
+            viewHolder.name = view.findViewById(R.id.tv_player_name);
+            viewHolder.teamName = view.findViewById(R.id.tv_player_team);
+            view.setTag(viewHolder);
+        } else {
+            view = convertView;
+            viewHolder = (ViewHolder) view.getTag();
+        }
+        viewHolder.image.setImageResource(player.getImageId());
+        viewHolder.name.setText(player.getName());
+        viewHolder.teamName.setText(player.getTeamName());
         return view;
+    }
+
+    class ViewHolder {
+        TextView name;
+        TextView teamName;
+        ImageView image;
     }
 }
