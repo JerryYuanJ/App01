@@ -50,7 +50,10 @@
         <activity
             android:name=".ui.ActivityListView"
             android:label="ListView界面" />
-        <activity android:name=".ui.ActivityListViewCustom"></activity>
+        <activity android:name=".ui.ActivityListViewCustom" />
+        <activity
+            android:name=".ui.ActivityRecyclerView"
+            android:label="RecyclerView界面"/>
     </application>
 
 </manifest>

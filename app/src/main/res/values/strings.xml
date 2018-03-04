@@ -24,4 +24,6 @@
     <string name="kobe_text">Kobe</string>
     <string name="lakers_text">Lakers</string>
     <string name="player_photo">player_photo</string>
+    <string name="go_to_recycler_view">跳到RecyclerView界面</string>
+    <string name="go_to_list_view_2">跳到ListView页面2-自定义Item内容</string>
 </resources>

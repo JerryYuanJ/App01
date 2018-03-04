@@ -16,7 +16,7 @@ import com.example.joker.app01.R;
 
 public class UIActivityMain extends AppCompatActivity implements View.OnClickListener {
 
-    private Button btn1, btn2, btn3, btn4, btn5, btn6,btn7;
+    private Button btn1, btn2, btn3, btn4, btn5, btn6,btn7,btn8;
     private ImageView iv;
     private ProgressBar pb;
 
@@ -31,6 +31,7 @@ public class UIActivityMain extends AppCompatActivity implements View.OnClickLis
         btn5 = findViewById(R.id.btn_ui_5);
         btn6 = findViewById(R.id.btn_ui_6);
         btn7 = findViewById(R.id.btn_ui_7);
+        btn8 = findViewById(R.id.btn_ui_8);
         btn1.setOnClickListener(this);
         btn2.setOnClickListener(this);
         btn3.setOnClickListener(this);
@@ -38,6 +39,7 @@ public class UIActivityMain extends AppCompatActivity implements View.OnClickLis
         btn5.setOnClickListener(this);
         btn6.setOnClickListener(this);
         btn7.setOnClickListener(this);
+        btn8.setOnClickListener(this);
 
         iv = findViewById(R.id.iv_ui_1);
         pb = findViewById(R.id.pb_ui_1);
@@ -73,6 +75,10 @@ public class UIActivityMain extends AppCompatActivity implements View.OnClickLis
                 break;
             case R.id.btn_ui_7:
                 intent = new Intent(UIActivityMain.this, ActivityListViewCustom.class);
+                startActivity(intent);
+                break;
+            case R.id.btn_ui_8:
+                intent = new Intent(UIActivityMain.this, ActivityRecyclerView.class);
                 startActivity(intent);
                 break;
         }

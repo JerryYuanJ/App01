@@ -57,5 +57,10 @@
         android:id="@+id/btn_ui_7"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="跳到ListView页面2-自定义Item内容" />
+        android:text="@string/go_to_list_view_2" />
+    <Button
+        android:id="@+id/btn_ui_8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/go_to_recycler_view" />
 </LinearLayout>
